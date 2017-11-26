@@ -1,2 +1,4 @@
 # ytrace_chrome_extension
-ytrace chrome extension
+This is a helper tool for [ytrace](https://github.com/yangxikun/ytrace), see also [ytrace_gui](https://github.com/yangxikun/ytrace_gui).
+
+![](img/popup.png)
