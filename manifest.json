@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "ytrace",
+    "version": "1.0.0",
+    "description": "ytrace debug tool",
+    "author": "Rokety Yang",
+    "icons":
+    {
+        "16": "img/ytrace.png",
+        "48": "img/ytrace.png",
+        "128": "img/ytrace.png"
+    },
+    "browser_action": 
+    {
+        "default_icon": "img/ytrace.png",
+        "default_title": "Ytrace",
+        "default_popup": "popup.html"
+    },
+    "permissions":
+    [
+    	"tabs",
+    	"*://*/*",
+        "cookies",
+        "storage"
+    ],
+    "background": {
+        "scripts": [ "background.js" ],
+        "persistent": false
+    },
+    "options_page": "options.html",
+    "homepage_url": "https://www.so.com"
+}

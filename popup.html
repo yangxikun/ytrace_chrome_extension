@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ytrace helper popup</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="popup.css">
+
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="popup.js"></script>
+	</head>
+
+	<body style="min-width: 800px; padding: 10px 10px;">
+		<div>
+			<p style="color: #868e96; float: left;">Below checked value will be set in cookie.</p>
+			<div class="switch" style="float: right;">
+				<input id="ytrace-toggle" class="ytrace-toggle ytrace-toggle-round-flat" type="checkbox">
+				<label for="ytrace-toggle"></label>
+			</div>
+		</div>
+		<form>
+			<div class="input-group">
+				<span class="input-group-addon">
+			    	<input type="checkbox" name="enable_trigger_check">
+			    </span>
+				<span class="input-group-addon ytrace-input-group-addon ytrace-name" name="enable_trigger_name">YTRACE_TRIGGER</span>
+				<input type="text" class="form-control" name="enable_trigger_value">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+			    	<input type="checkbox" name="white_list_check">
+			    </span>
+				<span class="input-group-addon ytrace-input-group-addon ytrace-name" name="white_list_name">YTRACE_WHITE_LIST</span>
+				<input type="text" class="form-control" name="white_list_value" placeholder="use comma to seprate multi value">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+			    	<input type="checkbox" name="black_list_check">
+			    </span>
+				<span class="input-group-addon ytrace-input-group-addon ytrace-name" name="black_list_name">YTRACE_BLACK_LIST</span>
+				<input type="text" class="form-control" name="black_list_value" placeholder="use comma to seprate multi value">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+			    	<input type="checkbox" name="var_display_max_children_check">
+			    </span>
+				<span class="input-group-addon ytrace-input-group-addon ytrace-name" name="var_display_max_children_name">YTRACE_VAR_DISPLAY_MAX_CHILDREN</span>
+				<input type="text" class="form-control" name="var_display_max_children_value">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+			    	<input type="checkbox" name="var_display_max_data_check">
+			    </span>
+				<span class="input-group-addon ytrace-input-group-addon ytrace-name" name="var_display_max_data_name">YTRACE_VAR_DISPLAY_MAX_DATA</span>
+				<input type="text" class="form-control" name="var_display_max_data_value">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+			    	<input type="checkbox" name="var_display_max_depth_check">
+			    </span>
+				<span class="input-group-addon ytrace-input-group-addon ytrace-name" name="var_display_max_depth_name">YTRACE_VAR_DISPLAY_MAX_DEPTH</span>
+				<input type="text" class="form-control" name="var_display_max_depth_value">
+			</div>
+			<div style="margin-top: 0.5rem;">
+				<button id="submit" type="submit" class="btn btn-primary" style="cursor: pointer;">Submit</button>
+				<div id="alert-success" style="display: none; color: #20c997;">
+				  Successfully saved.
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
